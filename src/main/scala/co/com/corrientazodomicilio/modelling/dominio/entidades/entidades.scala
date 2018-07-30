@@ -11,13 +11,32 @@ case class ESTE() extends Orientacion       // Sentido Este ->
 case class SUR() extends Orientacion        // Sentido Sur
 case class OESTE() extends Orientacion      // Sentido Oeste <-
 
-case class Coordenada(x:Int, y:Int, orientacion:Orientacion) {
-  def apply(): Coordenada = new Coordenada(0, 0, NORTE())
-
-  def apply(x: Int, y: Int, orientacion: Orientacion): Coordenada = new Coordenada(x, y, orientacion)
-}
+case class Coordenada(x:Int = 0, y:Int = 0, orientacion:Orientacion = NORTE())
 
 //case class Drone(id:Int, entregas:List[String], capacidad:Int)
 case class Drone(coordenada: Coordenada)
 
 case class Ruta(drone: Drone, entregas:List[String])
+
+// ARCHIVO -> co.com.drones.Inputs.services.InputsReaderService
+trait InputsReaderService{
+  def leerArchivo(): List[Instrucion]
+  
+  def crearArchivo(): Unit
+}
+
+// ARCHIVO -> co.com.drones.Inputs.services.InputsReaderServiceImpl
+trait InputsReaderServiceImpl extends InputsReaderService{
+    def leerArchivo(): List[Instrucion] = {
+      ??? 
+    }
+}
+
+object InputsReaderServiceImpl extends InputsReaderServiceImpl
+
+// ARCHIVO -> co.com.drones.drones.services.dronesService
+trait DronesService{
+   def iniciar = {
+      val listInstructions:List[Instrucion]  = InputsReaderServiceImpl.leerArchivo() 
+   }
+}
