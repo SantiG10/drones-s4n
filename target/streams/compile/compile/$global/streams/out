@@ -1,0 +1,13 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala:10:3: a pure expression does nothing in statement position; multiline expressions may require enclosing parentheses[0m
+[0m[[0m[33mwarn[0m] [0m[0m  "NORTE"[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala:14:3: a pure expression does nothing in statement position; multiline expressions may require enclosing parentheses[0m
+[0m[[0m[33mwarn[0m] [0m[0m  "ESTE"[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala:18:3: a pure expression does nothing in statement position; multiline expressions may require enclosing parentheses[0m
+[0m[[0m[33mwarn[0m] [0m[0m  "SUR"[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala:21:3: a pure expression does nothing in statement position; multiline expressions may require enclosing parentheses[0m
+[0m[[0m[33mwarn[0m] [0m[0m  "OESTE"[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mfour warnings found[0m
