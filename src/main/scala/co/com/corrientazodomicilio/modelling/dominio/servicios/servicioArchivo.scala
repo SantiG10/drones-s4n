@@ -18,7 +18,7 @@ sealed trait servicioArchivoInterprete extends AlgebraServicioArchivo{
 
   def crearArchivo(entregas: List[Drone]) = {
     val c = entregas.tail
-    val nuevoArchivo = new File("source/out.txt")
+    val nuevoArchivo = new File("files/out.txt")
     val w = new PrintWriter(nuevoArchivo)
     w.write("== Reporte de entregas ==\n")
     c.foreach{

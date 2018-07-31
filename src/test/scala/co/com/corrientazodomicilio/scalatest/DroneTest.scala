@@ -63,7 +63,7 @@ class DroneTest extends FunSuite{
       )
     }*/
 
-    val filename = "source/in.txt"
+    val filename = "files/in.txt"
     val list: List[String] = Source.fromFile(filename).getLines.toList
 
     val list2: List[List[Instruccion]] = list.map { x => x.split("").toList.map(y => Orientacion.newOrientacion(y)) }
