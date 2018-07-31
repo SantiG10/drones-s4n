@@ -1,6 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala:17:85: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : String[0m
-[0m[[0m[31merror[0m] [0m[0m required: co.com.corrientazodomicilio.modelling.dominio.entidades.Orientacion[0m
-[0m[[0m[31merror[0m] [0m[0m  def apply(x: Int, y: Int, orientacion: String): Coordenada = new Coordenada(x, y, orientacion)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/Documents/corrientazo-domicilio/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivo.scala:16:14: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : List[List[scala.util.Try[co.com.corrientazodomicilio.modelling.dominio.entidades.Instruccion]]][0m
+[0m[[0m[31merror[0m] [0m[0m required: List[List[co.com.corrientazodomicilio.modelling.dominio.entidades.Instruccion]][0m
+[0m[[0m[31merror[0m] [0m[0m    list.map { x => x.split("").toList.map(y => Orientacion.newOrientacion(y)) }[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

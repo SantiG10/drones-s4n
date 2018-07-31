@@ -7,6 +7,28 @@ import co.com.corrientazodomicilio.modelling.dominio.entidades._
 
 import scala.concurrent.ExecutionContext.Implicits.global
 
+object Instruccion {
+  def newInstruccion(drone: Drone, c:Instruccion):Drone = {
+    c match {
+      case A() => servicioDroneInterprete.moverAdelante(drone)
+      case D() => servicioDroneInterprete.moverDerecha(drone)
+      case I() => servicioDroneInterprete.moverIzquierda(drone)
+      case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $c")
+    }
+  }
+}
+
+object Orientacion {
+  def newOrientacion(s:String):Instruccion = {
+    s match {
+      case "A" => A()
+      case "D" => D()
+      case "I" => I()
+      case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $s")
+    }
+  }
+}
+
 // Algebra del API
 sealed trait AlgebraServicioDrone {
   def moverAdelante(d:Drone):Drone
@@ -18,62 +40,43 @@ sealed trait AlgebraServicioDrone {
 sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
 
   def moverAdelante(drone: Drone):Drone = {
-    val direccion = drone.coordenada.orientacion
-    var y = drone.coordenada.y
-    var x = drone.coordenada.x
-
-    direccion match {
-      case NORTE() => y = drone.coordenada.y + 1
-      case ESTE() => x = drone.coordenada.x + 1
-      case SUR() => y = drone.coordenada.y - 1
-      case OESTE() => x = drone.coordenada.x - 1
+    drone.coordenada.orientacion match {
+      case NORTE() => Drone(Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
+      case ESTE() => Drone(Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion))
+      case SUR() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion))
+      case OESTE() => Drone(Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion))
       //case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $c")
     }
-    Drone(Coordenada(x , y, direccion))
   }
 
   def moverIzquierda(drone: Drone):Drone = {
-    val direccion = drone.coordenada.orientacion
-    val y = drone.coordenada.y
-    val x = drone.coordenada.x
-    val nuevaDireccion = direccion match {
-      case NORTE() => OESTE()
-      case ESTE() => NORTE()
-      case SUR() => ESTE()
-      case OESTE() => SUR()
+    drone.coordenada.orientacion match {
+      case NORTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()))
+      case ESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
+      case SUR() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()))
+      case OESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
       //case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $c")
     }
-    Drone(Coordenada(x , y, nuevaDireccion))
   }
 
   def moverDerecha(drone: Drone):Drone = {
-    val direccion = drone.coordenada.orientacion
-    val y = drone.coordenada.y
-    val x = drone.coordenada.x
-    val nuevaDireccion = direccion match {
-      case NORTE() => ESTE()
-      case ESTE() => SUR()
-      case SUR() => OESTE()
-      case OESTE() => NORTE()
+    drone.coordenada.orientacion match {
+      case NORTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()))
+      case ESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
+      case SUR() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()))
+      case OESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
       //case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $c")
     }
-    Drone(Coordenada(x , y, nuevaDireccion))
+  }
+
+  def realizarEntrega(drone: Drone, ruta: List[Instruccion]):Drone = {
+    val listDrone: List[Drone] = List(drone)
+    val entrega: List[Drone] = ruta.foldLeft(listDrone){ (resultado, item) =>
+      resultado :+ Instruccion.newInstruccion(resultado.last, item)
+    }
+    entrega.last
   }
 }
 
 // Trait Object
 object servicioDroneInterprete extends servicioDroneInterprete
-
-object Instruccion {
-  def newInstruccion(drone: Drone, c:Char):Drone ={
-    c match {
-      case 'A' => servicioDroneInterprete.moverAdelante(drone)
-      case 'D' => servicioDroneInterprete.moverDerecha(drone)
-      case 'I' => servicioDroneInterprete.moverDerecha(drone)
-      //case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $c")
-    }
-  }
-}
-
-
-// sustantivos posicion

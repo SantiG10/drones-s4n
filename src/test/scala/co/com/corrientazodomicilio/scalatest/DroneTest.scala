@@ -2,17 +2,20 @@ package co.com.corrientazodomicilio.scalatest
 
 import org.scalatest.FunSuite
 import co.com.corrientazodomicilio.modelling.dominio.entidades._
-import co.com.corrientazodomicilio.modelling.dominio.servicios.servicioDroneInterprete
+import co.com.corrientazodomicilio.modelling.dominio.servicios._
 import com.sun.java.swing.plaf.gtk.GTKConstants.Orientation
 
 import scala.concurrent.Await
 import scala.concurrent.duration._
+import scala.io.Source
 
 
 class DroneTest extends FunSuite{
 
-  test("probando") {
-    val drone = Drone(Coordenada(0,0, NORTE()))
+  test("Test") {
+
+    // foldleft agregando
+    val drone = Drone(Coordenada())
 
     println(s"Antes: $drone")
     val nuevoDrone = servicioDroneInterprete.moverAdelante(drone)
@@ -45,19 +48,40 @@ class DroneTest extends FunSuite{
 
     assert(nuevoDrone5 == Drone(Coordenada(-1, 2, NORTE())))
 
-    val a = List("AADAAIAA", "ADDIAAA", "AADIAA")
+    /*val a = List("AADAAIAA", "ADDIAAA", "AADIAA")
 
     val ruta = Ruta(drone, a)
 
     val b = ruta.entregas.map { x => x.split("").toList }
 
     println("Lista antes:" + a)
-    println("Lista despues:" + b)
+    println("Lista despues:" + b)*/
 
-    b.foreach { x =>
+    /*b.foreach { x =>
       x.map(y =>
         println(y)
       )
+    }*/
+
+    val filename = "source/in.txt"
+    val list: List[String] = Source.fromFile(filename).getLines.toList
+
+    val list2: List[List[Instruccion]] = list.map { x => x.split("").toList.map(y => Orientacion.newOrientacion(y)) }
+
+    println("File lista: " + list2)
+
+    // Drone(id:Int, entregas:List[String], capacidad:Int)
+    val listEntregas: List[Drone] = List(drone)
+
+    val listNueva: List[Drone] = list2.foldLeft(listEntregas){ (resultado, item) =>
+      resultado :+ servicioDroneInterprete.realizarEntrega(resultado.last, item)
     }
+
+    // Lista de coordenadas de entrega
+    println(s"\nLista de entregas: ${listNueva.tail}")
+
+    // Crea el archivo
+    servicioArchivoInterprete.crearArchivo(listNueva)
+
   }
 }

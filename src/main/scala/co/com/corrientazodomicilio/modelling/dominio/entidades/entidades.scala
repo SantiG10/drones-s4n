@@ -1,42 +1,46 @@
 package co.com.corrientazodomicilio.modelling.dominio.entidades
 
-sealed trait Instrucion
-case class A(drone: Drone, c:Char) extends Instrucion
-case class I(drone: Drone, c:Char) extends Instrucion
-case class D(drone: Drone, c:Char) extends Instrucion
+import scala.io.Source
+
+trait Instruccion
+case class A() extends Instruccion
+case class I() extends Instruccion
+case class D() extends Instruccion
 
 sealed trait Orientacion
-case class NORTE() extends Orientacion      // Sentido Norte ^
-case class ESTE() extends Orientacion       // Sentido Este ->
-case class SUR() extends Orientacion        // Sentido Sur
-case class OESTE() extends Orientacion      // Sentido Oeste <-
-
+case class NORTE() extends Orientacion { // Sentido Norte ^
+  override def toString: String = {
+    "dirección Norte"
+  }
+}
+case class ESTE() extends Orientacion { // Sentido Este ->
+  override def toString: String = {
+    "dirección Oriente"
+  }
+}
+case class SUR() extends Orientacion { // Sentido Sur
+  override def toString: String = {
+    "dirección Sur"
+  }
+}
+case class OESTE() extends Orientacion { // Sentido Oeste <-
+  override def toString: String = {
+    "dirección Sur"
+  }
+}
 case class Coordenada(x:Int = 0, y:Int = 0, orientacion:Orientacion = NORTE())
 
 //case class Drone(id:Int, entregas:List[String], capacidad:Int)
-case class Drone(coordenada: Coordenada)
-
-case class Ruta(drone: Drone, entregas:List[String])
-
-// ARCHIVO -> co.com.drones.Inputs.services.InputsReaderService
-trait InputsReaderService{
-  def leerArchivo(): List[Instrucion]
-  
-  def crearArchivo(): Unit
-}
-
-// ARCHIVO -> co.com.drones.Inputs.services.InputsReaderServiceImpl
-trait InputsReaderServiceImpl extends InputsReaderService{
-    def leerArchivo(): List[Instrucion] = {
-      ??? 
+case class Drone(coordenada: Coordenada){
+  override def toString: String = {
+    coordenada.orientacion match {
+      case NORTE() => "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
+      case SUR() => "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
+      case ESTE() => "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
+      case OESTE() => "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
     }
+  }
 }
 
-object InputsReaderServiceImpl extends InputsReaderServiceImpl
-
-// ARCHIVO -> co.com.drones.drones.services.dronesService
-trait DronesService{
-   def iniciar = {
-      val listInstructions:List[Instrucion]  = InputsReaderServiceImpl.leerArchivo() 
-   }
-}
+//verbo de los servicios de dron
+case class RealizarEngrega(drone: Drone, entregas:List[String])
