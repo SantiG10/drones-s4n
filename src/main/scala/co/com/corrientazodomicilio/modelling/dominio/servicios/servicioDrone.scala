@@ -6,6 +6,7 @@ import scala.concurrent.{ExecutionContext, Future}
 import co.com.corrientazodomicilio.modelling.dominio.entidades._
 
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.util.Try
 
 object Instruccion {
   def newInstruccion(drone: Drone, c:Instruccion):Drone = {
@@ -29,6 +30,8 @@ object Orientacion {
   }
 }
 
+class sinAlcanceExcepcion extends Exception("SIN ALCANCE")
+
 // Algebra del API
 sealed trait AlgebraServicioDrone {
   def moverAdelante(d:Drone):Drone
@@ -41,11 +44,10 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
 
   def moverAdelante(drone: Drone):Drone = {
     drone.coordenada.orientacion match {
-      case NORTE() => Drone(Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
-      case ESTE() => Drone(Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion))
-      case SUR() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion))
-      case OESTE() => Drone(Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion))
-      //case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $c")
+      case NORTE() => Drone(validarCoordenada(Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion)))
+      case ESTE() => Drone(validarCoordenada(Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion)))
+      case SUR() => Drone(validarCoordenada(Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion)))
+      case OESTE() => Drone(validarCoordenada(Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion)))
     }
   }
 
@@ -55,7 +57,6 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
       case ESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
       case SUR() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()))
       case OESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
-      //case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $c")
     }
   }
 
@@ -65,16 +66,29 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
       case ESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
       case SUR() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()))
       case OESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
-      //case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $c")
     }
   }
 
-  def realizarEntrega(drone: Drone, ruta: List[Instruccion]):Drone = {
+  private def validarCoordenada(coordenada: Coordenada): Coordenada = {
+    if (coordenada.y >= 10 || coordenada.x >= 10) {
+      throw new sinAlcanceExcepcion
+    }
+    coordenada
+  }
+
+  def realizarRuta(drone: Drone, entrega: List[Instruccion]):Drone = {
     val listDrone: List[Drone] = List(drone)
-    val entrega: List[Drone] = ruta.foldLeft(listDrone){ (resultado, item) =>
+    val ruta: List[Drone] = entrega.foldLeft(listDrone){ (resultado, item) =>
       resultado :+ Instruccion.newInstruccion(resultado.last, item)
     }
-    entrega.last
+    ruta.last
+  }
+
+  def realizarEntregas(drone: Drone, rutas: List[List[Instruccion]]): List[Drone] = {
+    val listEntregas: List[Drone] = List(drone)
+    rutas.foldLeft(listEntregas){ (resultado, item) =>
+      resultado :+ realizarRuta(resultado.last, item)
+    }
   }
 }
 

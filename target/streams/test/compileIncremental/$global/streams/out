@@ -2,7 +2,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/s4n/Documents/corrientazo-domicilio/src/test/scala/co/com/corrientazodomicilio/scalatest/DroneTest.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/Users/santig/Documents/scala/drones-s4n/src/test/scala/co/com/corrientazodomicilio/scalatest/DroneTest.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
@@ -14,14 +14,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
 [0m[[0m[0mdebug[0m] [0m[0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /home/s4n/Documents/corrientazo-domicilio/target/scala-2.12/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /Users/santig/Documents/scala/drones-s4n/target/scala-2.12/test-classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.0:compile for Scala 2.12.6[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.0:compile for Scala 2.12.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 59d0142c for Scala compiler version 2.12.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler c3b3e6b for Scala compiler version 2.12.6[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/s4n/.sbt/boot/scala-2.12.6/lib/scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes:/Users/santig/.sbt/boot/scala-2.12.6/lib/scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	/home/s4n/Documents/corrientazo-domicilio/target/scala-2.12/test-classes:/home/s4n/Documents/corrientazo-domicilio/target/scala-2.12/classes:/home/s4n/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar:/home/s4n/.sbt/boot/scala-2.12.6/lib/scala-reflect.jar:/home/s4n/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar:/home/s4n/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.292640026 s[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/santig/Documents/scala/drones-s4n/target/scala-2.12/test-classes:/Users/santig/Documents/scala/drones-s4n/target/scala-2.12/classes:/Users/santig/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar:/Users/santig/.sbt/boot/scala-2.12.6/lib/scala-reflect.jar:/Users/santig/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar:/Users/santig/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.719678128 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m

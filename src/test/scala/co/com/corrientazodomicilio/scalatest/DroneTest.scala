@@ -71,17 +71,14 @@ class DroneTest extends FunSuite{
     println("File lista: " + list2)
 
     // Drone(id:Int, entregas:List[String], capacidad:Int)
-    val listEntregas: List[Drone] = List(drone)
 
-    val listNueva: List[Drone] = list2.foldLeft(listEntregas){ (resultado, item) =>
-      resultado :+ servicioDroneInterprete.realizarEntrega(resultado.last, item)
-    }
+    val listEntregas = servicioDroneInterprete.realizarEntregas(drone, list2)
 
     // Lista de coordenadas de entrega
-    println(s"\nLista de entregas: ${listNueva.tail}")
+    println(s"\nLista de entregas: ${listEntregas.tail}")
 
     // Crea el archivo
-    servicioArchivoInterprete.crearArchivo(listNueva)
+    servicioArchivoInterprete.crearArchivo(listEntregas)
 
   }
 }

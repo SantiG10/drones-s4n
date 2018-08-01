@@ -1,6 +1,7 @@
 package co.com.corrientazodomicilio.modelling.dominio.entidades
 
 import scala.io.Source
+import scala.util.Try
 
 trait Instruccion
 case class A() extends Instruccion
