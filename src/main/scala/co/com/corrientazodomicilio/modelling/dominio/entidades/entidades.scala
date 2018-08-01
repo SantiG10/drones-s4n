@@ -31,17 +31,16 @@ case class OESTE() extends Orientacion { // Sentido Oeste <-
 }
 case class Coordenada(x:Int = 0, y:Int = 0, orientacion:Orientacion = NORTE())
 
-//case class Drone(id:Int, entregas:List[String], capacidad:Int)
-case class Drone(coordenada: Coordenada){
+case class Drone(id:String = "00", coordenada: Coordenada, capacidad:Int = 10){
+//case class Drone(coordenada: Coordenada){
   override def toString: String = {
-    coordenada.orientacion match {
-      case NORTE() => "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
-      case SUR() => "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
-      case ESTE() => "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
-      case OESTE() => "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
-    }
+    "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
   }
 }
 
 //verbo de los servicios de dron
-case class RealizarEngrega(drone: Drone, entregas:List[String])
+//case class RealizarEngrega(drone: Drone, entregas:List[String])
+
+//case class Entrega(listEntrega: List[Instruccion])
+
+//case class Ruta(listRuta: List[Entrega])

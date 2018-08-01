@@ -25,47 +25,52 @@ object Orientacion {
       case "A" => A()
       case "D" => D()
       case "I" => I()
-      case _ => throw new Exception(s"Caracter invalido para creacion de instruccion: $s")
+      case _ => throw new Exception(s"Caracter invalido para la creación de la ruta: $s")
     }
   }
 }
 
-class sinAlcanceExcepcion extends Exception("SIN ALCANCE")
+class sinAlcanceExcepcion extends Exception("FUERA DE ALCANCE")
 
-// Algebra del API
+// Algebra del Drone
 sealed trait AlgebraServicioDrone {
   def moverAdelante(d:Drone):Drone
   def moverIzquierda(d:Drone):Drone
   def moverDerecha(d:Drone):Drone
 }
 
-//Interpretacion del algebra
+//Interpretacion del algebra del drone
 sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
+
+  type Entrega = List[Instruccion]
+  type Ruta = List[Entrega]
+
+  implicit val ecParaRutas = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(20))
 
   def moverAdelante(drone: Drone):Drone = {
     drone.coordenada.orientacion match {
-      case NORTE() => Drone(validarCoordenada(Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion)))
-      case ESTE() => Drone(validarCoordenada(Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion)))
-      case SUR() => Drone(validarCoordenada(Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion)))
-      case OESTE() => Drone(validarCoordenada(Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion)))
+      case NORTE() => Drone(drone.id, validarCoordenada(Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion)))
+      case ESTE() => Drone(drone.id, validarCoordenada(Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion)))
+      case SUR() => Drone(drone.id, validarCoordenada(Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion)))
+      case OESTE() => Drone(drone.id, validarCoordenada(Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion)))
     }
   }
 
   def moverIzquierda(drone: Drone):Drone = {
     drone.coordenada.orientacion match {
-      case NORTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()))
-      case ESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
-      case SUR() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()))
-      case OESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
+      case NORTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()))
+      case ESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
+      case SUR() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()))
+      case OESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
     }
   }
 
   def moverDerecha(drone: Drone):Drone = {
     drone.coordenada.orientacion match {
-      case NORTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()))
-      case ESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
-      case SUR() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()))
-      case OESTE() => Drone(Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
+      case NORTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()))
+      case ESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
+      case SUR() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()))
+      case OESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
     }
   }
 
@@ -76,21 +81,37 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
     coordenada
   }
 
-  def realizarRuta(drone: Drone, entrega: List[Instruccion]):Drone = {
-    val listDrone: List[Drone] = List(drone)
-    val ruta: List[Drone] = entrega.foldLeft(listDrone){ (resultado, item) =>
-      resultado :+ Instruccion.newInstruccion(resultado.last, item)
-    }
-    ruta.last
+  private def volverCasa(drone: Drone): Drone = {
+    Drone(drone.id,Coordenada())
   }
 
-  def realizarEntregas(drone: Drone, rutas: List[List[Instruccion]]): List[Drone] = {
-    val listEntregas: List[Drone] = List(drone)
-    rutas.foldLeft(listEntregas){ (resultado, item) =>
-      resultado :+ realizarRuta(resultado.last, item)
+  /*def simularEntrega(drone: Drone, entrega: Entrega):Drone = {
+    val listDrone: List[Drone] = List(drone)
+    val rutaEntrega: List[Drone] = entrega.foldLeft(listDrone){ (resultado, item) =>
+      resultado :+ Instruccion.newInstruccion(resultado.last, item)
+    }
+    rutaEntrega.last
+  }*/
+
+  def realizarEntrega(drone: Drone, entrega: Entrega):Drone = {
+    val listDrone: List[Drone] = List(drone)
+    val rutaEntrega: List[Drone] = entrega.foldLeft(listDrone){ (resultado, item) =>
+      resultado :+ Instruccion.newInstruccion(resultado.last, item)
+    }
+    rutaEntrega.last
+  }
+
+  def realizarRuta(drone: Drone, rutas: Ruta): Future[List[Drone]] = {
+    Future{
+      val listEntregas: List[Drone] = List(drone)
+      val resultRutas = rutas.foldLeft(listEntregas){ (resultado, item) =>
+        resultado :+ realizarEntrega(resultado.last, item)
+      }
+      servicioArchivoInterprete.crearArchivo(resultRutas)
+      resultRutas
     }
   }
 }
 
-// Trait Object
+// Trait Object Drone
 object servicioDroneInterprete extends servicioDroneInterprete
