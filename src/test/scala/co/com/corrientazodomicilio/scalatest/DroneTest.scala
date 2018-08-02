@@ -1,69 +1,55 @@
 package co.com.corrientazodomicilio.scalatest
 
+import java.util.concurrent.Executors
+
 import org.scalatest.FunSuite
 import co.com.corrientazodomicilio.modelling.dominio.entidades._
+import co.com.corrientazodomicilio.modelling.dominio.main.DronSystem
+import co.com.corrientazodomicilio.modelling.dominio.main.DronSystem.{drones, drones1}
 import co.com.corrientazodomicilio.modelling.dominio.servicios._
 import com.sun.java.swing.plaf.gtk.GTKConstants.Orientation
 
-import scala.concurrent.{Await, Future}
+import scala.concurrent.{Await, ExecutionContext, Future}
 import scala.concurrent.duration._
 import scala.io.Source
 
 
 class DroneTest extends FunSuite{
 
-  test("Test") {
+  test("Creación de drone"){
+    val drone = Drone("01", Coordenada())
+    assert(drone == Drone("01", Coordenada(0,0,NORTE()), 10))
+  }
 
-    // foldleft agregando
-    val drone = Drone("01", Coordenada(), 10)
-
-    println(s"Antes: $drone")
+  test("Mover drone hacia adelante"){
+    val drone = Drone("01", Coordenada())
     val nuevoDrone = servicioDroneInterprete.moverAdelante(drone)
-
-    println(s"Adelante: $nuevoDrone")
-
     assert(nuevoDrone == Drone("01", Coordenada(0, 1, NORTE()), 10))
+  }
 
-    //-- Adelante
-    val nuevoDrone2 = servicioDroneInterprete.moverAdelante(nuevoDrone)
-    println(s"Adelante: $nuevoDrone2")
+  test("Girar drone hacia la izquierda"){
+    val drone = Drone("01", Coordenada())
+    val nuevoDrone = servicioDroneInterprete.moverIzquierda(drone)
+    assert(nuevoDrone == Drone("01", Coordenada(0, 0, OESTE()), 10))
+  }
 
-    assert(nuevoDrone2 == Drone("01", Coordenada(0, 2, NORTE()), 10))
+  test("Girar drone hacia la derecha"){
+    val drone = Drone("01", Coordenada())
+    val nuevoDrone = servicioDroneInterprete.moverDerecha(drone)
+    assert(nuevoDrone == Drone("01", Coordenada(0, 0, ESTE()), 10))
+  }
 
-    //-- Izquierda
-    val nuevoDrone3 = servicioDroneInterprete.moverIzquierda(nuevoDrone2)
-    println(s"Izquierda: $nuevoDrone3")
+  test("Leer archivo de text que convierte en una lista de instruciones"){
+    val filename = "files/test/in.txt"
+    val list2 = servicioArchivoInterprete.leerArchivo(filename)
+    assert(list2 == List(List(A(), A(), A(), D(), D(), A(), A(), I(), A())))
+  }
 
-    assert(nuevoDrone3 == Drone("01", Coordenada(0, 2, OESTE()), 10))
+  test("Test General") {
 
-    //-- Adelante
-    val nuevoDrone4 = servicioDroneInterprete.moverAdelante(nuevoDrone3)
-    println(s"Adelante: $nuevoDrone4")
+    val drone = Drone("01", Coordenada())
 
-    assert(nuevoDrone4 == Drone("01", Coordenada(-1, 2, OESTE()), 10))
-
-    //-- Derecha
-    val nuevoDrone5 = servicioDroneInterprete.moverDerecha(nuevoDrone4)
-    println(s"Derecha: $nuevoDrone5")
-
-    assert(nuevoDrone5 == Drone("01", Coordenada(-1, 2, NORTE()), 10))
-
-    /*val a = List("AADAAIAA", "ADDIAAA", "AADIAA")
-
-    val ruta = Ruta(drone, a)
-
-    val b = ruta.entregas.map { x => x.split("").toList }
-
-    println("Lista antes:" + a)
-    println("Lista despues:" + b)*/
-
-    /*b.foreach { x =>
-      x.map(y =>
-        println(y)
-      )
-    }*/
-
-    val filename = "files/in01.txt"
+    val filename = "files/in/in01.txt"
     val list: List[String] = Source.fromFile(filename).getLines.toList
 
     val list2 = servicioArchivoInterprete.leerArchivo(filename)
@@ -93,6 +79,26 @@ class DroneTest extends FunSuite{
 
     // Crea el archivo
     //servicioArchivoInterprete.crearArchivo(resEntrega)
+
+    val listViajes: List[List[List[Instruccion]]] = DronSystem.drones.map(x =>
+      servicioArchivoInterprete.leerArchivo("files/in/in" + x.id + ".txt")
+    )
+
+    val tuplaDronesViajes = drones.zip(listViajes)
+
+    val resulTuplaViajes: List[Future[List[Drone]]] = tuplaDronesViajes.map(x =>
+      servicioDroneInterprete.realizarRuta(x._1,x._2)
+    )
+
+    implicit val ec = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(20))
+
+    val resSequence: Future[List[List[Drone]]] = Future.sequence {
+      resulTuplaViajes
+    }
+
+    val resEntrega2: List[List[Drone]] = Await.result(resSequence, 10 seconds)
+
+    println("Prueba final: " + resEntrega2)
 
   }
 }

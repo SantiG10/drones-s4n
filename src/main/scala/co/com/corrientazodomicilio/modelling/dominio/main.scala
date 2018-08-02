@@ -19,22 +19,19 @@ object main extends App {
     val drones1 = List(Drone("01", Coordenada()), Drone("02", Coordenada()))
     def cargarViajes():Unit = {
 
-      val listViajes: List[List[List[Instruccion]]] = DronSystem.drones1.map(x =>
-        servicioArchivoInterprete.leerArchivo("files/in" + x.id + ".txt")
+      val listViajes: List[List[List[Instruccion]]] = DronSystem.drones.map(x =>
+        servicioArchivoInterprete.leerArchivo("files/in/in" + x.id + ".txt")
       )
 
-      val dron1 = servicioArchivoInterprete.leerArchivo("files/in01.txt")
-      val dron2 = servicioArchivoInterprete.leerArchivo("files/in02.txt")
+      val tuplaDronesViajes = drones.zip(listViajes)
 
-      val result: List[Future[List[Drone]]] = drones1.flatMap(drone =>
-        listViajes.map( ruta => servicioDroneInterprete.realizarRuta(drone, ruta))
+      val resulTuplaViajes: List[Future[List[Drone]]] = tuplaDronesViajes.map(x =>
+        servicioDroneInterprete.realizarRuta(x._1,x._2)
       )
 
-      println(dron1)
-      println(dron2)
       println(s"\n Lista de viajes: $listViajes")
 
-      println(s"\n Resultado viajes: $result")
+      println(s"\n Resultado viajes: $resulTuplaViajes")
 
       /*
       val resSequence: Future[List[List[Drone]]] = Future.sequence {

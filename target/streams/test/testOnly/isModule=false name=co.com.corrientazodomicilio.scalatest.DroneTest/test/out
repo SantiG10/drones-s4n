@@ -1,2 +1,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mDroneTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- Test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Creación de drone[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Mover drone hacia adelante[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Girar drone hacia la izquierda[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Girar drone hacia la derecha[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Leer archivo de text que convierte en una lista de instruciones[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test General[0m[0m

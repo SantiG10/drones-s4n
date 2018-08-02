@@ -45,14 +45,34 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
   type Entrega = List[Instruccion]
   type Ruta = List[Entrega]
 
-  implicit val ecParaRutas = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(20))
+  implicit val ec = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(20))
 
   def moverAdelante(drone: Drone):Drone = {
     drone.coordenada.orientacion match {
-      case NORTE() => Drone(drone.id, validarCoordenada(Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion)))
-      case ESTE() => Drone(drone.id, validarCoordenada(Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion)))
-      case SUR() => Drone(drone.id, validarCoordenada(Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion)))
-      case OESTE() => Drone(drone.id, validarCoordenada(Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion)))
+      case NORTE() =>
+        if (validarCoordenada(Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion)).isSuccess){
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
+        }else {
+          ???
+        }
+      case ESTE() =>
+        if (validarCoordenada(Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion)).isSuccess){
+          Drone(drone.id, Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion))
+        }else {
+          ???
+        }
+      case SUR() =>
+        if (validarCoordenada(Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion)).isSuccess){
+          Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion))
+        } else {
+          ???
+        }
+      case OESTE() =>
+        if (validarCoordenada(Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion)).isSuccess){
+          Drone(drone.id, Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion))
+        }else {
+          ???
+        }
     }
   }
 
@@ -74,11 +94,11 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
     }
   }
 
-  private def validarCoordenada(coordenada: Coordenada): Coordenada = {
+  private def validarCoordenada(coordenada: Coordenada): Try[Coordenada] = {
     if (coordenada.y >= 10 || coordenada.x >= 10) {
-      throw new sinAlcanceExcepcion
+      Try(throw new sinAlcanceExcepcion)
     }
-    coordenada
+    Try(coordenada)
   }
 
   private def volverCasa(drone: Drone): Drone = {
