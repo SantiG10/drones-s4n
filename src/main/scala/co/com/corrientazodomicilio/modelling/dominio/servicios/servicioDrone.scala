@@ -51,46 +51,46 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
     drone.coordenada.orientacion match {
       case NORTE() =>
         if (validarCoordenada(Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion)).isSuccess){
-          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion), drone.capacidad)
         } else {
-          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion), drone.capacidad)
         }
       case ESTE() =>
         if (validarCoordenada(Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion)).isSuccess){
-          Drone(drone.id, Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion))
+          Drone(drone.id, Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion), drone.capacidad)
         } else {
-          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion), drone.capacidad)
         }
       case SUR() =>
         if (validarCoordenada(Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion)).isSuccess){
-          Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion))
+          Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion), drone.capacidad)
         } else {
-          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion), drone.capacidad)
         }
       case OESTE() =>
         if (validarCoordenada(Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion)).isSuccess){
-          Drone(drone.id, Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion))
+          Drone(drone.id, Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion), drone.capacidad)
         } else {
-          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion), drone.capacidad)
         }
     }
   }
 
   def moverIzquierda(drone: Drone):Drone = {
     drone.coordenada.orientacion match {
-      case NORTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()))
-      case ESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
-      case SUR() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()))
-      case OESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
+      case NORTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()), drone.capacidad)
+      case ESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()), drone.capacidad)
+      case SUR() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()), drone.capacidad)
+      case OESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()), drone.capacidad)
     }
   }
 
   def moverDerecha(drone: Drone):Drone = {
     drone.coordenada.orientacion match {
-      case NORTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()))
-      case ESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()))
-      case SUR() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()))
-      case OESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()))
+      case NORTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,ESTE()), drone.capacidad)
+      case ESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,SUR()), drone.capacidad)
+      case SUR() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,OESTE()), drone.capacidad)
+      case OESTE() => Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y ,NORTE()), drone.capacidad)
     }
   }
 
@@ -113,13 +113,14 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
     if (rutaEntrega.last.coordenada.x.abs > 10 || rutaEntrega.last.coordenada.y.abs > 10){
       volverCasa(drone)
     } else {
-      rutaEntrega.last
+      val resultEntrega = rutaEntrega.last.copy(capacidad = rutaEntrega.last.capacidad - 1)
+      resultEntrega
     }
   }
 
   def realizarRuta(drone: Drone, rutas: Ruta): Future[List[Drone]] = {
     Future{
-      var threadName1 = Thread.currentThread().getName
+      val threadName1 = Thread.currentThread().getName
       println(s"Hilo Drone: $threadName1")
       val listEntregas: List[Drone] = List(drone)
       val resultRutas = rutas.foldLeft(listEntregas){ (resultado, item) =>

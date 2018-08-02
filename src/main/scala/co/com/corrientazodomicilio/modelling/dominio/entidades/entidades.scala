@@ -33,6 +33,6 @@ case class Coordenada(x:Int = 0, y:Int = 0, orientacion:Orientacion = NORTE())
 
 case class Drone(id:String = "00", coordenada: Coordenada, capacidad:Int = 10){
   override def toString: String = {
-    "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion
+    "(" + coordenada.x + ", " + coordenada.y + ") " + coordenada.orientacion //+ ", Cap: " + capacidad
   }
 }

@@ -25,7 +25,7 @@ sealed trait servicioArchivoInterprete extends AlgebraServicioArchivo{
     val nuevoArchivo = new File("files/out/out"+ c.head.id +".txt")
     val w = new PrintWriter(nuevoArchivo)
     w.write("== Reporte de entregas ==\n")
-    if (c.head == Drone(c.head.id, Coordenada())){
+    if (c.head == Drone(c.head.id, Coordenada(), 9)){
       w.write("Error en el archivo")
     } else {
       c.foreach{ entrega =>
@@ -41,14 +41,3 @@ sealed trait servicioArchivoInterprete extends AlgebraServicioArchivo{
 }
 
 object servicioArchivoInterprete extends servicioArchivoInterprete
-
-/*
-trait DronesService{
-  def iniciar = {
-    val listInstructions:List[List[Instruccion]]  = servicioArchivoInterprete.leerArchivo("/home/s4n/in01.txt")
-  }
-}
-*/
-
-// Realizar los futuros
-// implicit val ex = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(5))
