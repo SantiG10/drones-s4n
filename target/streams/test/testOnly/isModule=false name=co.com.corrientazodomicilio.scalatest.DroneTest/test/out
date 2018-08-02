@@ -4,4 +4,16 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- Girar drone hacia la izquierda[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Girar drone hacia la derecha[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Leer archivo de text que convierte en una lista de instruciones[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- Test General[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Test General *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.Exception: Caracter invalido para la creación de la ruta: F[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at co.com.corrientazodomicilio.modelling.dominio.servicios.Orientacion$.newOrientacion(servicioDrone.scala:28)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at co.com.corrientazodomicilio.modelling.dominio.servicios.servicioArchivoInterprete.$anonfun$leerArchivo$3(servicioArchivo.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.List.map(List.scala:287)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at co.com.corrientazodomicilio.modelling.dominio.servicios.servicioArchivoInterprete.$anonfun$leerArchivo$2(servicioArchivo.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.List.map(List.scala:287)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at co.com.corrientazodomicilio.modelling.dominio.servicios.servicioArchivoInterprete.$anonfun$leerArchivo$1(servicioArchivo.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.util.Try$.apply(Try.scala:209)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at co.com.corrientazodomicilio.modelling.dominio.servicios.servicioArchivoInterprete.leerArchivo(servicioArchivo.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at co.com.corrientazodomicilio.modelling.dominio.servicios.servicioArchivoInterprete.leerArchivo$(servicioArchivo.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at co.com.corrientazodomicilio.modelling.dominio.servicios.servicioArchivoInterprete$.leerArchivo(servicioArchivo.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m

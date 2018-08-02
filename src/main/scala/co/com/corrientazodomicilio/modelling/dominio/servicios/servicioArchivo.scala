@@ -16,6 +16,7 @@ sealed trait servicioArchivoInterprete extends AlgebraServicioArchivo{
     val listaVacia = List(List())
     val list: List[String] = Source.fromFile(filename).getLines.toList
     val rutas = Try{list.map { x => x.toUpperCase.split("").toList.map(y => Orientacion.newOrientacion(y)) }}
+    //println("lista rutas: " + rutas)
     rutas.getOrElse(listaVacia)
   }
 
@@ -28,7 +29,11 @@ sealed trait servicioArchivoInterprete extends AlgebraServicioArchivo{
       w.write("Error en el archivo")
     } else {
       c.foreach{ entrega =>
-        w.write(entrega.toString + "\n")
+        if (entrega.coordenada.x.abs == 0 && entrega.coordenada.y.abs == 0 && entrega.coordenada.orientacion == NORTE()){
+          w.write("Entrega Fallida -- Fuera del rango, Dron vuelve a (O,O)N\n")
+        } else {
+          w.write(entrega.toString + "\n")
+        }
       }
     }
     w.close()

@@ -5,14 +5,14 @@ import java.util.concurrent.Executors
 import org.scalatest.FunSuite
 import co.com.corrientazodomicilio.modelling.dominio.entidades._
 import co.com.corrientazodomicilio.modelling.dominio.main.DronSystem
-import co.com.corrientazodomicilio.modelling.dominio.main.DronSystem.{drones, drones1}
+import co.com.corrientazodomicilio.modelling.dominio.main.DronSystem.{drones}
 import co.com.corrientazodomicilio.modelling.dominio.servicios._
 import com.sun.java.swing.plaf.gtk.GTKConstants.Orientation
 
 import scala.concurrent.{Await, ExecutionContext, Future}
 import scala.concurrent.duration._
 import scala.io.Source
-
+import scala.util.Try
 
 class DroneTest extends FunSuite{
 

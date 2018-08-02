@@ -3,40 +3,38 @@
   <component name="ChangeListManager">
     <list default="true" id="47904a44-989b-4e89-a1f2-5be985d80e1f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/in01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/in/in01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/in02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/in/in02.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/out01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/out/out01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/out02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/out/out02.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/active.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/active.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$06ced57064267033c37d$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$06ced57064267033c37d.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$06ced57064267033c37d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$233e4e3409c8581b149a$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$233e4e3409c8581b149a.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$233e4e3409c8581b149a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$47ec8a6523a4edc11b80$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$47ec8a6523a4edc11b80.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$47ec8a6523a4edc11b80.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8652e92c95ffac5cf09a$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8652e92c95ffac5cf09a.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8652e92c95ffac5cf09a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$98c453962ec3f030f283$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$98c453962ec3f030f283.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$98c453962ec3f030f283.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/drones-s4n-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/drones-s4n-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/drones-s4n-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/drones-s4n-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-drones-s4n-build-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/in/in01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/in/in01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/in/in03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/in/in03.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/out/out01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/out/out01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/out/out03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/out/out03.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$44da7f99dbddfa287097$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$44da7f99dbddfa287097.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$44da7f99dbddfa287097.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4e85137f3ffe4dc955c9$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4e85137f3ffe4dc955c9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4e85137f3ffe4dc955c9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$640d9c1294e9dd02cfed$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$640d9c1294e9dd02cfed.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$640d9c1294e9dd02cfed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cd439eac3766668b8759$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cd439eac3766668b8759.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cd439eac3766668b8759.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f365d00ddb448e5538da$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f365d00ddb448e5538da.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f365d00ddb448e5538da.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/corrientazo-domicilio-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/corrientazo-domicilio-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/corrientazo-domicilio-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/corrientazo-domicilio-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-corrientazo-domicilio-build-test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
@@ -48,27 +46,35 @@
       <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivo.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDrone.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDrone.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/co/com/corrientazodomicilio/scalatest/DroneTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/co/com/corrientazodomicilio/scalatest/DroneTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/entidades/Drone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/entidades/Drone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/main$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/main$DronSystem$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/main$DronSystem$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/main$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/main$delayedInit$body.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/AlgebraServicioArchivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/AlgebraServicioArchivo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivoInterprete$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivoInterprete$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivoInterprete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivoInterprete.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDroneInterprete$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDroneInterprete$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDroneInterprete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDroneInterprete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/corrientazo-domicilio/corrientazo-domicilio_2.12/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/corrientazo-domicilio/corrientazo-domicilio_2.12/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/corrientazo-domicilio/corrientazo-domicilio_2.12/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/corrientazo-domicilio/corrientazo-domicilio_2.12/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/corrientazo-domicilio-corrientazo-domicilio_2.12-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/corrientazo-domicilio_2.12/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/corrientazo-domicilio_2.12/0.1/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/corrientazo-domicilio_2.12/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/corrientazo-domicilio_2.12/0.1/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-corrientazo-domicilio_2.12-test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/co/com/corrientazodomicilio/scalatest/DroneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/co/com/corrientazodomicilio/scalatest/DroneTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
@@ -82,7 +88,6 @@
       <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/compile/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compile/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" afterDir="false" />
@@ -127,12 +132,12 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="entidades.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            <state relative-caret-position="119">
+              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding>
                 <element signature="e#65#87#0" expanded="true" />
               </folding>
@@ -140,11 +145,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="servicioDrone.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="servicioDrone.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDrone.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="71" column="111" lean-forward="true" selection-start-line="71" selection-start-column="111" selection-end-line="71" selection-end-column="111" />
+            <state relative-caret-position="2040">
+              <caret line="120" column="11" lean-forward="true" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="11" />
               <folding>
                 <element signature="e#65#102#0" expanded="true" />
               </folding>
@@ -152,68 +157,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="in01.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/in/in01.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="in02.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/in/in02.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="in04.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/in/in04.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="out01.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/out/out01.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="out02.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/out/out02.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="servicioArchivo.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivo.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            <state relative-caret-position="306">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <folding>
+                <element signature="e#65#129#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="out08.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/out/out08.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="main.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/main.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+              <folding>
+                <element signature="e#55#119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="out09.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/out/out09.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="DroneTest.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/co/com/corrientazodomicilio/scalatest/DroneTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+              <folding>
+                <element signature="e#47#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -233,17 +210,18 @@
         <option value="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDron.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/source/in.txt" />
-        <option value="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala" />
         <option value="$PROJECT_DIR$/files/in.txt" />
         <option value="$PROJECT_DIR$/files/in02.txt" />
         <option value="$PROJECT_DIR$/files/test/in.txt" />
-        <option value="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivo.scala" />
         <option value="$PROJECT_DIR$/files/in/in04.txt" />
         <option value="$PROJECT_DIR$/files/out/out10.txt" />
-        <option value="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/main.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/co/com/corrientazodomicilio/scalatest/DroneTest.scala" />
         <option value="$PROJECT_DIR$/files/in/in01.txt" />
+        <option value="$PROJECT_DIR$/files/in/in03.txt" />
         <option value="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDrone.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/main.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivo.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/co/com/corrientazodomicilio/scalatest/DroneTest.scala" />
       </list>
     </option>
   </component>
@@ -267,9 +245,7 @@
     <option name="width" value="1280" />
     <option name="height" value="724" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <flattenPackages ProjectPane="false" />
@@ -277,60 +253,61 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
               <item name="in" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="dominio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
@@ -338,8 +315,8 @@
               <item name="entidades" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
@@ -347,21 +324,21 @@
               <item name="servicios" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="drones-s4n" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drones-s4n" type="462c0819:PsiDirectoryNode" />
+              <item name="corrientazo-domicilio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corrientazo-domicilio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
@@ -371,7 +348,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -526,63 +502,64 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="724" extended-state="0" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="9" />
-      <window_info anchor="bottom" id="TODO" order="13" weight="0.32843137" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.3276923" />
-      <window_info anchor="right" id="sbt" order="5" />
+      <window_info anchor="right" id="Palette" order="8" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.32786885" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.3295082" />
+      <window_info anchor="right" id="sbt" order="5" weight="0.32960895" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.3276923" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32843137" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3295082" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26171875" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="1" weight="0.32843137" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26177174" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="2" weight="0.32786885" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.32786885" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3295082" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24980047" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26171875" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="17" weight="0.4" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32843137" />
-      <window_info anchor="right" id="Palette&#9;" order="12" />
-      <window_info anchor="right" id="Maven Projects" order="16" />
-      <window_info anchor="bottom" id="Database Changes" order="20" show_stripe_button="false" />
-      <window_info anchor="right" id="sbt" order="14" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="13" weight="0.25" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="TODO" order="21" weight="0.32843137" />
-      <window_info anchor="bottom" id="Inspection" order="19" weight="0.4" />
-      <window_info anchor="right" id="Database" order="15" />
-      <window_info anchor="bottom" id="Cvs" order="18" weight="0.25" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="5" weight="0.32843137" />
-      <window_info anchor="bottom" id="Find" order="15" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="16" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.32843137" />
-      <window_info anchor="right" id="Palette" order="17" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="10" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Build" order="5" weight="0.32843137" />
       <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Palette" order="16" />
+      <window_info anchor="bottom" id="Run" order="18" />
+      <window_info anchor="right" id="sbt" order="13" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="11" weight="0.32843137" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="9" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="20" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="10" weight="0.25" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32843137" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3276923" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="22" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Maven Projects" order="15" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26171875" />
+      <window_info anchor="right" id="Database" order="14" />
+      <window_info anchor="bottom" id="Message" order="15" />
+      <window_info anchor="bottom" id="TODO" order="23" weight="0.32843137" />
+      <window_info anchor="right" id="Palette&#9;" order="11" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="21" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="17" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="19" weight="0.4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,9 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#47#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,16 +591,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out.txt" />
-    <entry file="file://$PROJECT_DIR$/files/out.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/in.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out.txt" />
+    <entry file="file://$PROJECT_DIR$/files/in.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDrone.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -658,9 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
-          <folding>
-            <element signature="e#47#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -682,9 +645,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out.txt" />
-    <entry file="file://$PROJECT_DIR$/files/out.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out.txt" />
     <entry file="file://$PROJECT_DIR$/files/in/in01.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -703,9 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="e#47#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,9 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#47#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,26 +720,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/out.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/in/scriptFile.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out.txt" />
+    <entry file="file://$PROJECT_DIR$/files/in/scriptFile.scala" />
     <entry file="file://$PROJECT_DIR$/files/out/out05.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/out/out07.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/out/out10.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/in/in03.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/files/in/in05.txt">
@@ -805,76 +743,6 @@
     <entry file="file://$PROJECT_DIR$/files/in/in10.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/co/com/corrientazodomicilio/scalatest/DroneTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
-          <folding>
-            <element signature="e#47#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding>
-            <element signature="e#55#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/out/out03.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/out/out04.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/out/out06.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/out/out08.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/out/out09.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/out/out01.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/out/out02.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding>
-            <element signature="e#65#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/in/in04.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -889,19 +757,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/files/out/out04.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out/out08.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out/out09.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out/out10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out/out06.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out/out07.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out/out02.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out/out03.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/out/out01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/in/in03.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/files/in/in01.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioDrone.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="71" column="111" lean-forward="true" selection-start-line="71" selection-start-column="111" selection-end-line="71" selection-end-column="111" />
+        <state relative-caret-position="2040">
+          <caret line="120" column="11" lean-forward="true" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="11" />
           <folding>
             <element signature="e#65#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/servicios/servicioArchivo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#65#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/entidades/entidades.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="e#65#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/co/com/corrientazodomicilio/modelling/dominio/main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="e#55#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/co/com/corrientazodomicilio/scalatest/DroneTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+          <folding>
+            <element signature="e#47#84#0" expanded="true" />
           </folding>
         </state>
       </provider>

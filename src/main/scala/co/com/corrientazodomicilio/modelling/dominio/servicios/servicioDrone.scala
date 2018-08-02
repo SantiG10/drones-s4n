@@ -52,26 +52,26 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
       case NORTE() =>
         if (validarCoordenada(Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion)).isSuccess){
           Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
-        }else {
-          ???
+        } else {
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
         }
       case ESTE() =>
         if (validarCoordenada(Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion)).isSuccess){
           Drone(drone.id, Coordenada(drone.coordenada.x + 1, drone.coordenada.y, drone.coordenada.orientacion))
-        }else {
-          ???
+        } else {
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
         }
       case SUR() =>
         if (validarCoordenada(Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion)).isSuccess){
           Drone(drone.id, Coordenada(drone.coordenada.x, drone.coordenada.y - 1, drone.coordenada.orientacion))
         } else {
-          ???
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
         }
       case OESTE() =>
         if (validarCoordenada(Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion)).isSuccess){
           Drone(drone.id, Coordenada(drone.coordenada.x - 1, drone.coordenada.y, drone.coordenada.orientacion))
-        }else {
-          ???
+        } else {
+          Drone(drone.id, Coordenada(drone.coordenada.x,drone.coordenada.y + 1, drone.coordenada.orientacion))
         }
     }
   }
@@ -95,7 +95,7 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
   }
 
   private def validarCoordenada(coordenada: Coordenada): Try[Coordenada] = {
-    if (coordenada.y >= 10 || coordenada.x >= 10) {
+    if (coordenada.y.abs > 10 || coordenada.x.abs >= 10) {
       Try(throw new sinAlcanceExcepcion)
     }
     Try(coordenada)
@@ -105,24 +105,22 @@ sealed trait servicioDroneInterprete extends AlgebraServicioDrone{
     Drone(drone.id,Coordenada())
   }
 
-  /*def simularEntrega(drone: Drone, entrega: Entrega):Drone = {
-    val listDrone: List[Drone] = List(drone)
-    val rutaEntrega: List[Drone] = entrega.foldLeft(listDrone){ (resultado, item) =>
-      resultado :+ Instruccion.newInstruccion(resultado.last, item)
-    }
-    rutaEntrega.last
-  }*/
-
   def realizarEntrega(drone: Drone, entrega: Entrega):Drone = {
     val listDrone: List[Drone] = List(drone)
     val rutaEntrega: List[Drone] = entrega.foldLeft(listDrone){ (resultado, item) =>
       resultado :+ Instruccion.newInstruccion(resultado.last, item)
     }
-    rutaEntrega.last
+    if (rutaEntrega.last.coordenada.x.abs > 10 || rutaEntrega.last.coordenada.y.abs > 10){
+      volverCasa(drone)
+    } else {
+      rutaEntrega.last
+    }
   }
 
   def realizarRuta(drone: Drone, rutas: Ruta): Future[List[Drone]] = {
     Future{
+      var threadName1 = Thread.currentThread().getName
+      println(s"Hilo Drone: $threadName1")
       val listEntregas: List[Drone] = List(drone)
       val resultRutas = rutas.foldLeft(listEntregas){ (resultado, item) =>
         resultado :+ realizarEntrega(resultado.last, item)

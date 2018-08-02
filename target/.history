@@ -8,3 +8,7 @@ console
 testOnly co.com.corrientazodomicilio.scalatest.DroneTest
 console
 testOnly co.com.corrientazodomicilio.scalatest.DroneTest
+console
+testOnly co.com.corrientazodomicilio.scalatest.DroneTest
+console
+testOnly co.com.corrientazodomicilio.scalatest.DroneTest
