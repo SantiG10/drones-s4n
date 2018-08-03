@@ -5,4 +5,5 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- Girar drone hacia la derecha[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Leer archivo de text que convierte en una lista de instruciones[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Leer archivo de text con errores[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Convertir lista de String de entrega a instruciones validas[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Test General[0m[0m

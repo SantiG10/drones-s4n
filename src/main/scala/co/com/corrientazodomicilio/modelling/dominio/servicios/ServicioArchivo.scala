@@ -13,17 +13,13 @@ sealed trait AlgebraServicioArchivo{
 
 sealed trait ServicioArchivo extends AlgebraServicioArchivo{
   def leerArchivo(filename:String): Try[List[List[Instruccion]]] = {
-    val listaVacia = List(List())
     val list: List[String] = Source.fromFile(filename).getLines.toList
     val rutas = Try{list.map { x => x.toUpperCase.split("").toList.map(y => Orientacion.newOrientacion(y)) }}
-    //println("lista rutas: " + rutas)
-    //rutas.getOrElse(listaVacia)
     rutas
   }
 
   def crearArchivo(entregas: List[Drone]):Unit = {
     val c = entregas.tail
-    println("Aca: " + c)
     val nuevoArchivo = new File("files/out/out"+ c.head.id +".txt")
     val w = new PrintWriter(nuevoArchivo)
     w.write("== Reporte de entregas ==\n")

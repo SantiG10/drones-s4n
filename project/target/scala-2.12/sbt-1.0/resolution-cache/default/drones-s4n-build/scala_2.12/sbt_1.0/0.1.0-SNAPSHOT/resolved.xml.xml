@@ -4,7 +4,7 @@
 		module="drones-s4n-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180801211206"
+		publication="20180802221113"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
