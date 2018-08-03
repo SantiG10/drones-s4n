@@ -1,0 +1,32 @@
+== Reporte de entregas ==
+(-2, 4) dirección Norte
+(-1, 3) dirección Sur
+(0, 0) dirección Sur
+(-4, 1) dirección Sur
+(-5, 1) dirección Sur
+(-5, -1) dirección Sur
+(-7, -1) dirección Oriente
+(-7, -3) dirección Oriente
+(-7, -2) dirección Norte
+(-5, 2) dirección Norte
+Dron vuelve a (O,O)N por mas pedidos
+(0, 1) dirección Norte
+(0, 2) dirección Norte
+(0, 3) dirección Norte
+(0, 4) dirección Norte
+(0, 5) dirección Norte
+(0, 6) dirección Norte
+(0, 7) dirección Norte
+(0, 8) dirección Norte
+(0, 9) dirección Norte
+(0, 10) dirección Norte
+Dron vuelve a (O,O)N por mas pedidos
+(0, 1) dirección Norte
+(0, 2) dirección Norte
+(0, 3) dirección Norte
+(0, 4) dirección Norte
+(0, 6) dirección Norte
+(0, 7) dirección Norte
+(0, 8) dirección Norte
+(0, 9) dirección Norte
+(0, 10) dirección Norte
